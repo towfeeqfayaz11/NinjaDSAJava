@@ -1,0 +1,1 @@
+# in case of characters in java when we try to perform an operation, the actuall operation happens on the ascii values and hence the result is an integer literal
