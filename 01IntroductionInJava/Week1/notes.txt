@@ -33,3 +33,19 @@ Hello
 
 
 # vscode extensions for java :-> "Extension pack for java"
+
+# different types of integer in number system
+  15               -> decimal 15
+  017              -> octal (decimal 15)
+  0B1111 / 0b1111  -> binary (decimal 15)
+  0XF / 0xF        -> hexadecimal (decimal 15)
+
+
+# in java we can do also;
+  double  d = 1e-9;   0.1 * 10^-8
+
+# for char data type, we can either give char literal or equivalent ascii value of char (java will internally convert the ascii to equivalent char)
+# we can also assign the equivalent unicode value
+  char c = 'a';      // same as below
+  char d = 97;       // same as above
+  char e = '\u0061'  // same as above
