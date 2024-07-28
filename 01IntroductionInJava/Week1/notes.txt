@@ -1,0 +1,35 @@
+# jre = (builtin java class library, packages) + jvm
+# jdk = java development tools + jre
+
+# javac (java compiler) is provided by jdk ("java development tools" to be specific)
+# java (invking jvm to execute our byte code) is provided by jvm
+
+# java source code ---> "compiler" ---> java byte code (.class file) ---> "jvm" ---> jvm converts it to machine code and executes 
+
+## comments in java
+// single line comment
+/*
+multi line
+comment
+*/
+
+# to compile and generate byte code from a different directory
+$ javac /home/MyJavaFile.java
+# You can then run it by including /home on the classpath.
+$ java -cp /home MyJavaFile
+
+# If you want to generate the class file in a different directory then you can use the -d option with javac.
+# Use the -d command line parameter with javac to tell it what directory you'd like to store the compiled 
+# class files in. Then, to run the program, simply include this directory in the classpath:
+$ javac -d some/directory myjavafile.java
+$ java -cp some/directory myjavafile
+
+# e.g;
+$ pwd
+/Users/towfeeq.fayaz/towfeeq/NinjaDSAJava
+$ javac -d /tmp 1_IntroductionToJava/1_IntroToJava/HelloWorld.java
+$ NinjaDSAJava java -cp /tmp HelloWorld                                        
+Hello
+
+
+# vscode extensions for java :-> "Extension pack for java"
