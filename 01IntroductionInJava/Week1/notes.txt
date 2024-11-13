@@ -1,8 +1,8 @@
 # jre = (builtin java class library, packages) + jvm
-# jdk = java development tools + jre
+# jdk = java development tools(e.g compiler) + jre
 
 # javac (java compiler) is provided by jdk ("java development tools" to be specific)
-# java (invking jvm to execute our byte code) is provided by jvm
+# java (invoking jvm to execute our byte code) is provided by jvm
 
 # java source code ---> "compiler" ---> java byte code (.class file) ---> "jvm" ---> jvm converts it to machine code and executes 
 
@@ -49,3 +49,42 @@ Hello
   char c = 'a';      // same as below
   char d = 97;       // same as above
   char e = '\u0061'  // same as above
+
+
+# A variable name can have upper/lower case characters, underscore(_), dollar($) and numbers (should not start with number)
+
+
+# different data types
+byte  -> 1 byte -> -128 to 127
+short -> 2 byte -> -32768 to 32767
+int   -> 4 byte -> -2147483648 to 2147483647
+long  -> 8 byte -> -9223372036854775808 to 9223372036854775807 (to denote an integer literal of type long append L or l at the end)
+
+float -> 4 bytes   (to denote a decimal literal of type float append F or f at the end) (precision to 5 decimal places)
+double -> 8 bytes  (by default considers decimal as double)
+
+char -> 2 bytes -> 0 to 65535
+
+boolean -> (1 bit or 1 byte) -> true or false
+
+
+# we can have different types of literals like integer literal, decimal literal etc;
+  when we assign a literal to a variable, the java first assigns temporary memory to the literal 
+  (whose size can change depending on literal type)
+
+  e.g;   byte b = 11;    here 11 is an integer literal with temporary memory of 4 bytes
+         short a  = 42;  here 42 is an integer literal with temporary memory of 4 bytes
+         int i = 63;     here 63 is an integer literal with temporary memory of 4 bytes
+         long l = 911L;  here 63 is an long literal with temporary memory of 8 bytes
+
+
+
+
+
+byte b = 013;       // storing octal as deciaml
+byte b = 0b1111;    // storing binary as decimal
+byte b = 0xA;       // storing hexadecimal as decimal
+
+
+double d = 0.1e8;    // 0.1 * 10^8
+double d = 1e-8;     // 1 * 10^-8

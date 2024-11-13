@@ -1,1 +1,13 @@
-# in case of characters in java when we try to perform an operation, the actuall operation happens on the ascii values and hence the result is an integer literal
+# in case of characters in java when we try to perform an operation(arithmatic operation), the actual operation happens
+  on the ascii values and hence the result is an integer literal
+
+# automatic / implicit type conversion/casting takes place when two types are compatible and the size of the destination type
+  is larger than the source type
+
+# Operations on Strings and char
+  + ==> concatinates two strings
+
+  string + string = string
+  string  + number = string
+   
+ls -l
