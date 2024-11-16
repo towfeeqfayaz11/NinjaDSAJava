@@ -28,6 +28,8 @@ Sample Output 2:
 19
  */
 
+
+ // method 1:
 import java.util.Scanner;
 public class AllPrimes {
     public static void main(String[] args) {
@@ -58,3 +60,29 @@ public class AllPrimes {
         sc.close();
     }
 }
+
+/*
+// method 2
+import java.util.Scanner;
+
+public class AllPrimes {
+	
+	public static void main(String[] args) {
+		// Write your code here
+		Scanner sc = new Scanner(System.in);
+
+		int N = sc.nextInt();
+
+		for(int i=0; i<=N;i++){
+			if(i*i == N){
+				System.out.println(i);
+				break;
+			}else if(i*i > N){
+				System.out.println(i-1);
+				break;
+			}
+		}
+
+	}
+}
+*/
