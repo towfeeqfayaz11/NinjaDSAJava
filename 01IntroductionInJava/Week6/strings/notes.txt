@@ -1,0 +1,5 @@
+# In java, we cannot take individual character as input like nextInt for integer etc.
+# Rather we can take entire string as input using next() or nextLine()
+
+# also when we print the array reference variable directly, for other datatype, it prints the address of the first value,
+  but for character array, it prints the entire character array as string
