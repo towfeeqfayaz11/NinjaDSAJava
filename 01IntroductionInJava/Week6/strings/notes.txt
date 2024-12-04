@@ -3,3 +3,22 @@
 
 # also when we print the array reference variable directly, for other datatype, it prints the address of the first value,
   but for character array, it prints the entire character array as string
+
+=================
+
+# different ways to create string in java
+// using string literal
+String s1 = "Welcome";
+
+// using new keyword
+String s2 = new String("coding");
+
+// passing char array
+char[] ch = {'n', 'i', 'n', 'j', 'a'};
+String s3 = new String(ch);
+
+// passing byte array
+byte[] b = {97, 98, 99, 100, 101};
+String s4 = new String(b);
+
+====================================
