@@ -38,3 +38,12 @@ StringBuffer s1 = new StringBuffer("Hello"); // length is 5, initial capacity is
 NOTE: String in java is immutable while StringBuffer is mutable
 NOTE: StringBuffer objects store their content on the heap not in the string pool. (This is the
       fundamental distinction between String and StringBuffer in java)
+
+
+==============
+
+# for string null is assigned as
+String s1 = null;
+
+# for char null is assigned as
+char c1 = '\0';
