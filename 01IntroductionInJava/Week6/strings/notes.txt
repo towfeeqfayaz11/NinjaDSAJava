@@ -22,3 +22,19 @@ byte[] b = {97, 98, 99, 100, 101};
 String s4 = new String(b);
 
 ====================================
+
+
+# Mutable strings in java (StringBuffer class)
+
+StringBuffer s1 = new StringBuffer(); // has length and capacity (default capacity is 16 characters)
+System.out.println(s1.length());      // default length is 0 (since empty string)
+System.out.println(s1.capacity());    // default capacity is 16 characters
+
+
+StringBuffer s1 = new StringBuffer(30); // will create string with capacity of 30 characters
+StringBuffer s1 = new StringBuffer("Hello"); // length is 5, initial capacity is (16+5)=21
+
+
+NOTE: String in java is immutable while StringBuffer is mutable
+NOTE: StringBuffer objects store their content on the heap not in the string pool. (This is the
+      fundamental distinction between String and StringBuffer in java)
