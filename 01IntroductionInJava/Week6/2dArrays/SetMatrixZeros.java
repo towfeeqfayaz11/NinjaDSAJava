@@ -91,7 +91,8 @@ Sample Output 2 :
 /*
 Solution 1:
 
-Time Complexity = 
+Time Complexity = O(n * m)
+Space Complexity = O(n * m)
 */
 public class SetMatrixZeros {
     public static void setZeros(int matrix[][]) {
@@ -144,69 +145,70 @@ Space Complexity: O(1)
     
 class SetMatrixZeros2 {
     public static void setZeros(int matrix[][]) {
-        int n = matrix.length;
-        int m = matrix[0].length;
+        int n=matrix.length;
+        int m=matrix[0].length;
 
-        // Flags to track if the first row and column need to be zeroed
         boolean firstRowZero = false;
         boolean firstColZero = false;
 
-        // Check if the first row has any zero
-        for (int j = 0; j < m; j++) {
-            if (matrix[0][j] == 0) {
-                firstRowZero = true;
-                break;
-            }
-        }
-
-        // Check if the first column has any zero
-        for (int i = 0; i < n; i++) {
-            if (matrix[i][0] == 0) {
+        // check if first column needs to be zero
+        for(int i=0; i<n; i++){
+            if(matrix[i][0] == 0){
                 firstColZero = true;
-                break;
             }
         }
 
-        // Use first row and column as markers for the rest of the matrix
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j < m; j++) {
-                if (matrix[i][j] == 0) {
-                    matrix[i][0] = 0; // Mark the row
-                    matrix[0][j] = 0; // Mark the column
+        // confirm if first row needs to be zero
+        for(int j=0; j<m; j++){
+            if(matrix[0][j] == 0){
+                firstRowZero = true;
+            }
+        }
+
+        // now since the state of first row and first col is saved, we can use these respective
+        // first  row and first col as markers for rest of the array
+        for(int i=1; i<n; i++){
+            for(int j=1; j<m; j++){
+                if(matrix[i][j] == 0){
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
                 }
             }
         }
 
-        // Set rows to zero based on markers in the first column
-        for (int i = 1; i < n; i++) {
-            if (matrix[i][0] == 0) {
-                for (int j = 1; j < m; j++) {
+        // update respective colums for each element based on marking
+        for(int i=1; i<n ; i++){
+            if(matrix[i][0] == 0){
+                for(int j=1; j<m; j++){
                     matrix[i][j] = 0;
                 }
             }
         }
 
-        // Set columns to zero based on markers in the first row
-        for (int j = 1; j < m; j++) {
-            if (matrix[0][j] == 0) {
-                for (int i = 1; i < n; i++) {
+        // update respective rows for each element based on marking
+        for(int j=1; j<m; j++){
+            if(matrix[0][j] == 0){
+                for(int i=1; i<n; i++){
                     matrix[i][j] = 0;
                 }
             }
         }
 
-        // Handle the first row separately if needed
-        if (firstRowZero) {
-            for (int j = 0; j < m; j++) {
+
+        // based on earlier marking for first row, check if entire row need to be marked zero
+        if(firstRowZero){
+            for(int j=0; j<m; j++){
                 matrix[0][j] = 0;
             }
         }
 
-        // Handle the first column separately if needed
-        if (firstColZero) {
-            for (int i = 0; i < n; i++) {
+        // based on earlier marking for first column, check if entrie col need to be marked zero
+        if(firstColZero){
+            for(int i=0; i<n; i++){
                 matrix[i][0] = 0;
             }
         }
+
+        
     }
 }
