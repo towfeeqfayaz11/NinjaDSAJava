@@ -1,0 +1,12 @@
+// sorting
+// based on iterative way of sorting
+# bubble sort        // used of smaller size of data array
+# selection sort
+# insertion sort
+
+// based on recursive way of sorting
+# merge sort
+# quick sort
+
+// based on trees
+# heap sort
