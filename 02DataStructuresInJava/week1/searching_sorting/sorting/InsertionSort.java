@@ -1,5 +1,14 @@
 /*
 Intution for insertion sort:
+1. Start with the first element: Consider the first element as already sorted.
+2. Pick the next element: Take the next element from the unsorted portion.
+3. Find the correct position: Compare the picked element with elements in the sorted portion, moving from right to left, to find its correct position.
+4. Shift elements: Shift all elements in the sorted portion that are greater than the picked element one position to the right.
+5. Insert the element: Insert the picked element into its correct position.
+6. Repeat: Repeat the process for all elements until the entire array is sorted.
+
+Time Complexity: O(n^2)
+Space Complexity: O(1)
 
 */
 

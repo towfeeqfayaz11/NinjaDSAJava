@@ -9,7 +9,7 @@ ideal to use when input is very small and simple
 */
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] arr = {5, 4, 3, 2, 1};
+        int[] arr = {5, 4, 3, 2, 1}; 
         selectionSort(arr);
         for (int ele : arr) {
             System.out.print(ele + " ");
