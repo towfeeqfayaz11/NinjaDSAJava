@@ -10,6 +10,9 @@ Intution for insertion sort:
 Time Complexity: O(n^2)
 Space Complexity: O(1)
 
+Insertion sort works by dividing the array into two parts; sorted and unsorted, and inserting elements fro the unsorted portion
+into the sorted portion at the correct position
+
 */
 
 public class InsertionSort {

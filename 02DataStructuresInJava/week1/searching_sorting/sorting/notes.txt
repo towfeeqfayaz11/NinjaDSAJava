@@ -1,8 +1,8 @@
 // sorting
 // based on iterative way of sorting
-# bubble sort        // used of smaller size of data array T=O(N^2), S=O(1)
-# selection sort     // used of smaller size of data array T=O(N^2), S=O(1)
-# insertion sort     // 
+# bubble sort        // used of smaller size of data array T=O(N^2), S=O(1), stable (maintains relative order of same elements)
+# selection sort     // used of smaller size of data array T=O(N^2), S=O(1), not stable (does not maintain relative order of same elements)
+# insertion sort     // best suited for partial sorted array T=O(N^2), S=O(1), stable (maintains relative order of same elements)
 
 // based on recursive way of sorting
 # merge sort
