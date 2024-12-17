@@ -10,7 +10,7 @@ Intution for insertion sort:
 Time Complexity: O(n^2)
 Space Complexity: O(1)
 
-Insertion sort works by dividing the array into two parts; sorted and unsorted, and inserting elements fro the unsorted portion
+Insertion sort works by dividing the array into two parts; sorted and unsorted, and inserting elements from the unsorted portion
 into the sorted portion at the correct position
 
 */
@@ -26,6 +26,7 @@ public class InsertionSort {
 
     public static void insertionSort(int[] arr) {
         int n = arr.length;
+        // considering element at index 0 is already sorted
         for (int i = 1; i < n; i++) {
             int key = arr[i];
             int j = i - 1;

@@ -87,13 +87,31 @@ S = O(1)
 // }
 
 
+// Time Complexity = O(N^2)
+// using selection sort
+// public class Sort012 {
+//     public static void sort012(int[] arr, int n){
+//         //Your code goes here
+//         for(int i=0;i<arr.length-1;i++){
+//             int i_min=i;
+//             for(int j=i+1;j<arr.length;j++){
+//                 if(arr[j]<arr[i_min])
+//                 i_min = j;
+//             }
+//             int temp = arr[i];
+//             arr[i] = arr[i_min];
+//             arr[i_min]=temp;
+//         }
+//     }
+// }
+
 /*
 Solution 3: optimal
 using Dutch National Flag Algorithm
 T = O(N)
 S = O(1)
 */
-public class Sort012Three {
+public class Sort012 {
     public static void sort012(int[] arr){
         int low = 0, mid = 0, high = arr.length-1;
 
@@ -115,3 +133,5 @@ public class Sort012Three {
         }
     }
 }
+
+
