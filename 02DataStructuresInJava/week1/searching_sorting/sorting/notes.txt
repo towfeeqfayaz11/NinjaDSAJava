@@ -5,8 +5,8 @@
 # insertion sort     // best suited for partial sorted array T=O(N^2), S=O(1), stable (maintains relative order of same elements)
 
 // based on recursive way of sorting
-# merge sort
-# quick sort
+# merge sort (calling recursion first and then doing work) // needs local copies
+# quick sort (does work upfront and then calls recursion) // no local copies are required
 
 // based on trees
 # heap sort
