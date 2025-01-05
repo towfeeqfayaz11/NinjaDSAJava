@@ -10,3 +10,6 @@
 
 // based on trees
 # heap sort
+
+
+NOTE: selection does lot of work for sorted array, while insertion sort doesn't do much for a sorted array
